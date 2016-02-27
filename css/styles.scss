@@ -1,0 +1,172 @@
+$font-stack: "futura-pt",sans-serif;
+$navy: #0c2163;
+$blue: #89d2ff;
+$pink: #f42144;
+$yellow: #ffd400;
+$white: #fff;
+
+/*general type choices*/
+body {
+  font-family: $font-stack;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30;
+  color: $navy;
+}
+
+h2{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 25;
+}
+
+h3{
+
+}
+
+/*navigation*/
+.menu {
+  min-height: 50px;
+  padding: 10px;
+  border: 1px;
+}
+
+.menu{
+  #logo{
+    height: 50px;
+  }
+
+  #about {
+    color:$pink;
+  }
+
+  #work {
+    color:$blue;
+  }
+
+  #blog {
+    color:$yellow;
+  }
+
+  .menu-item {
+    padding-top: 8px;
+  }
+
+  .menu-item > a {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .menu-item > a:hover {
+  color:$navy;
+  }
+}
+
+.footer {
+  width: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.footer {
+  img {
+    width: 20px;
+  }
+}
+/*about page*/
+#meet{
+  background-color: $pink;
+  color: $white;
+}
+
+#skills {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.designer {
+  background-color: $white;
+  color: $blue;
+  padding: 10px 100px 10px 100px;
+  flex: 1;
+}
+
+.designer > h2, .developer > h2 {
+  text-align: center;
+}
+
+.developer {
+  background-color: $blue;
+  color: $white;
+  padding: 10px 100px 10px 100px;
+  flex: 1;
+}
+
+.design {
+  background-color: $white;
+  color: $blue;
+  padding: 10px 50px 10px 50px;
+}
+
+.design > h2, .dev > h2 {
+  text-align: center;
+}
+
+.dev {
+  background-color: $blue;
+  color: $white;
+  padding: 10px 50px 10px 50px;
+}
+
+.experience {
+  background-color: $yellow;
+  color: $navy;
+}
+
+.experience {
+  h2 {
+    text-align: center;
+  }
+  .ex-comp {
+    display: inline;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .ex-title {
+    display: inline;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .ex-descript {
+
+  }
+}
+
+.contact {
+  background-color: $white;
+  color: $navy;
+}
+
+.contact {
+  h2 {
+    text-align: center;
+  }
+
+  .email {
+    text-align: center;
+  }
+  .phone {
+    text-align: center;
+  }
+}

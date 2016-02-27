@@ -170,3 +170,22 @@ h3{
     text-align: center;
   }
 }
+
+/*work page*/
+#port {
+  img {
+    width: 250px;
+  }
+  .mix{
+	display: none;
+  margin: 10px;
+  }
+}
+ #filtering p {
+   font-size: 18px;
+   font-style: italic;
+   cursor: pointer;
+   color: $navy;
+   padding-bottom: 0;
+   margin-bottom: 0;
+ }

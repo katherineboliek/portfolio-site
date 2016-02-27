@@ -7,7 +7,10 @@
     <!--css-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.min.css" />
-
+    <!--jquery plugin-->
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
 
   <body>
@@ -15,7 +18,7 @@
     <!--navigation-->
     <div class="container">
       <div class="row menu">
-        <div class="col-sm-4"><img src="img/kboliek.png" id="logo"></div>
+        <div class="col-sm-4"><a href="index.html"><img src="img/kboliek.png" id="logo"></a></div>
         <div class="col-sm-4">
           <div class="row">
             <div class="col-sm-4 menu-item"><a href="about.html" id="about">About</a></div>
@@ -25,10 +28,33 @@
         </div>
         <div class="col-sm-4"></div>
       </div>
+      <!--content-->
+      <div class="row" id="filtering">
+        <div class="col-sm-2">
+          <p class="filter" data-filter="all">All</p>
+          <p class="filter" data-filter=".category-1">Web</p>
+          <p class="filter" data-filter=".category-2">Illustration</p>
+          <p class="filter" data-filter=".category-3">Infographics</p>
+          <p class="filter" data-filter=".category-4">Motion Graphics</p>
+        </div>
+        <div class="col-sm-10" id="port">
+          <div class="mix category-1" data-myorder="1"><a href=""><img src="img/test-portfolio.png"></a></div>
+          <div class="mix category-2 category-3" data-myorder="2"><a href=""><img src="img/test-portfolio.png"></a></div>
+          <div class="mix category-4" data-myorder="3"><a href=""><img src="img/test-portfolio.png"></a></div>
+          <div class="mix category-2" data-myorder="4"><a href=""><img src="img/test-portfolio.png"></a></div>
+          <div class="mix category-1" data-myorder="5"><a href=""><img src="img/test-portfolio.png"></a></div>
+          <div class="mix category-1" data-myorder="6"><a href=""><img src="img/test-portfolio.png"></a></div>
+          <div class="mix category-2 category-3" data-myorder="7"><a href=""><img src="img/test-portfolio.png"></a></div>
+          <div class="mix category-2" data-myorder="8"><a href=""><img src="img/test-portfolio.png"></a></div>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="row footer">
+        <div class="col-xs-3"><a href="https://www.facebook.com/katherine.boliek" target="_blank"><img src="img/facebook.png"></a></div>
+        <div class="col-xs-3"><a href="https://twitter.com/KatherineBoliek" target="_blank"><img src="img/twitter.png"></a></div>
+        <div class="col-xs-3"><a href="https://www.instagram.com/katherineboliek/" target="_blank"><img src="img/insta.png"></a></div>
+        <div class="col-xs-3"><a href="https://www.linkedin.com/in/katherineboliek" target="_blank"><img src="img/linkedin.png"></a></div>
+      </div>
     </div>
-    <!--content-->
-
-    <!--footer-->
-
   </body>
 </html>

@@ -10,23 +10,46 @@ body {
   font-family: $font-stack;
   font-weight: 400;
   color: $navy;
+  font-size: 17px;
 }
 
 h1 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 30;
-  color: $navy;
 }
 
 h2{
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 25;
+  font-size: 28;
 }
 
 h3{
 
+}
+
+/*container*/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 930px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1090px;
+  }
 }
 
 /*navigation*/
@@ -34,6 +57,7 @@ h3{
   min-height: 50px;
   padding: 10px;
   border: 1px;
+  background-color: $white;
 }
 
 .menu{
@@ -42,14 +66,17 @@ h3{
   }
 
   #about {
+    text-align: center;
     color:$pink;
   }
 
   #work {
+    text-align: center;
     color:$blue;
   }
 
   #blog {
+    text-align: center;
     color:$yellow;
   }
 
@@ -93,6 +120,8 @@ h3{
 #meet{
   background-color: $pink;
   color: $white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #skills {
@@ -105,7 +134,7 @@ h3{
 .designer {
   background-color: $white;
   color: $blue;
-  padding: 10px 100px 10px 100px;
+  padding: 20px 100px 20px 100px;
   flex: 1;
 }
 
@@ -116,7 +145,7 @@ h3{
 .developer {
   background-color: $blue;
   color: $white;
-  padding: 10px 100px 10px 100px;
+  padding: 20px 100px 20px 100px;
   flex: 1;
 }
 
@@ -139,9 +168,9 @@ h3{
 .experience {
   background-color: $yellow;
   color: $navy;
-}
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-.experience {
   h2 {
     text-align: center;
   }
@@ -163,6 +192,8 @@ h3{
 .contact {
   background-color: $white;
   color: $navy;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .contact {
@@ -179,34 +210,53 @@ h3{
 }
 
 /*work page*/
+#work-content {
+  margin-top: 30px;
+}
+
 #port {
+  padding-left: 50px;
+
   img {
-    width: 250px;
+    width: 230px;
   }
   .mix{
 	display: none;
-  margin: 20px;
+  margin: 0 20px 40px 20px;
   }
 }
- #filtering p {
-   font-size: 18px;
-   font-style: italic;
-   cursor: pointer;
-   color: $navy;
-   padding-bottom: 0;
-   margin-bottom: 0;
- }
+ #filtering {
 
+   p {
+     font-size: 16px;
+     font-weight: 400;
+     cursor: pointer;
+     color: $navy;
+     padding-bottom: 0;
+     margin-bottom: 5px;
+     text-align: right;
+     text-transform: uppercase;
+   }
+ }
 /*portfolio pages*/
 .port-piece {
   img {
     width: 100%;
-  }
-  p {
-    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   a, a:hover {
     color:$navy;
-    text-decoration: underline;
+    text-decoration: none;
+  }
+  #back{
+    text-align: right;
+    font-size: 20;
+    text-transform: uppercase;
+    padding-right: 50px;
+    margin-top: 20px;
+  }
+  port-content {
+    padding-left: 50px;
   }
 }

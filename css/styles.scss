@@ -119,9 +119,42 @@ h3{
 /*about page*/
 #meet{
   background-color: $pink;
-  color: $white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-image: url('../img/katherine_boliek.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $navy;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  @media (max-width: 767px){
+    .meet-text {
+    padding-top: 200px;
+    }
+  }
+  @media (min-width: 768px){
+    .meet-text {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+  }
+  @media (min-width: 992px) {
+    .meet-text {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .meet-text {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    }
+  }
 }
 
 #skills {
@@ -236,6 +269,14 @@ h3{
      margin-bottom: 5px;
      text-align: right;
      text-transform: uppercase;
+   }
+
+   @media(max-width: 767px){
+     p {
+       text-align: center;
+       /*display: inline;
+       margin: 10px;*/
+     }
    }
  }
 /*portfolio pages*/

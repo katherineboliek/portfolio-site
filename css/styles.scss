@@ -10,23 +10,24 @@ body {
   font-family: $font-stack;
   font-weight: 400;
   color: $navy;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 h1 {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 30;
+  font-size: 36;
 }
 
 h2{
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 28;
+  font-size: 30;
+  margin-bottom: 20px;
 }
 
 h3{
-
+font-size: 27px;
 }
 
 /*container*/
@@ -35,6 +36,15 @@ h3{
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -54,7 +64,7 @@ h3{
 
 /*navigation*/
 .menu {
-  min-height: 50px;
+  min-height: 55px;
   padding: 10px;
   border: 1px;
   background-color: $white;
@@ -65,17 +75,17 @@ h3{
     height: 50px;
   }
 
-  #about {
+  .about {
     text-align: center;
     color:$pink;
   }
 
-  #work {
+  .work {
     text-align: center;
     color:$blue;
   }
 
-  #blog {
+  .blog {
     text-align: center;
     color:$yellow;
   }
@@ -97,6 +107,16 @@ h3{
   }
 }
 
+#aboutsm, #worksm, #blogsm {
+  font-size: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*footer*/
 .footer {
   width: 200px;
   padding-left: 15px;
@@ -115,6 +135,7 @@ h3{
 /*index*/
 #main-logo {
   width: 100%;
+  margin-bottom: 20px;
 }
 /*about page*/
 #meet{
@@ -130,6 +151,7 @@ h3{
 
   p {
     font-size: 20px;
+    font-weight: 700;
   }
 
   @media (max-width: 767px){
@@ -151,8 +173,8 @@ h3{
   }
   @media (min-width: 1200px) {
     .meet-text {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     }
   }
 }
@@ -185,7 +207,7 @@ h3{
 .design {
   background-color: $white;
   color: $blue;
-  padding: 10px 50px 10px 50px;
+  padding: 35px 35px 35px 35px;
 }
 
 .design > h2, .dev > h2 {
@@ -195,7 +217,7 @@ h3{
 .dev {
   background-color: $blue;
   color: $white;
-  padding: 10px 50px 10px 50px;
+  padding: 35px 35px 35px 35px;
 }
 
 .experience {
@@ -203,6 +225,15 @@ h3{
   color: $navy;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  .new-ex {
+    margin-bottom: 15px;
+  }
+
+  .dates {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
 
   h2 {
     text-align: center;
@@ -226,7 +257,6 @@ h3{
   background-color: $white;
   color: $navy;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .contact {
@@ -248,11 +278,32 @@ h3{
 }
 
 #port {
-  padding-left: 50px;
 
   img {
-    width: 230px;
+    width: 200px;
   }
+
+  @media (max-width: 568px){
+    img {
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (max-width: 480px){
+    img {
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
   .mix{
 	display: none;
   margin: 0 20px 40px 20px;
@@ -261,7 +312,6 @@ h3{
  #filtering {
 
    p {
-     font-size: 16px;
      font-weight: 400;
      cursor: pointer;
      color: $navy;
@@ -279,6 +329,13 @@ h3{
      }
    }
  }
+
+ @media (max-width: 991px){
+  #filtering {
+    margin-bottom: 35px;
+  }
+ }
+
 /*portfolio pages*/
 .port-piece {
   img {

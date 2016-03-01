@@ -22,14 +22,22 @@
         <div class="col-sm-4 hidden-xs"></div>
         <div class="col-sm-4 hidden-xs">
           <div class="row">
-            <div class="col-sm-4 menu-item"><a href="about.html" id="about">About</a></div>
-            <div class="col-sm-4 menu-item"><a href="work.html" id="work">Work</a></div>
-            <div class="col-sm-4 menu-item"><a href="#" id="blog">Blog</a></div>
+            <div class="col-sm-4 menu-item"><a href="about.html" class="about">About</a></div>
+            <div class="col-sm-4 menu-item"><a href="work.html" class="work">Work</a></div>
+            <div class="col-sm-4 menu-item"><a href="#" class="blog">Blog</a></div>
           </div>
         </div>
-        <div class="hidden-lg hidden-md hidden-sm col-xs-6"></div>
-        <div class="hidden-lg hidden-md hidden-sm col-xs-2" id="drop"></div>
+        <div class="hidden-lg hidden-md hidden-sm col-xs-4"></div>
+        <div class="hidden-lg hidden-md hidden-sm col-xs-4 dropdown">
+          <button onclick="dropdown()" class="trigger">Menu</button>
+          <div id="dropdownMenu" class="dropdown-content">
+            <a href="about.html" class="about">About</a>
+            <a href="work.html" class="work">Work</a>
+            <a href="http://katherineboliek.com/blog" class="blog">Blog</a>
+          </div>
+        </div>
       </div>
+    </div>
       <!--content-->
       <div class="row" id="work-content">
         <div class="col-sm-3" id="filtering">

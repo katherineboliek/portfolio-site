@@ -107,6 +107,57 @@ font-size: 27px;
   }
 }
 
+/* Dropdown Button */
+.trigger {
+    background-color: $white;
+    width: 100%;
+    color: $navy;
+    text-transform: uppercase;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.trigger:hover, .trigger:focus {
+    border-radius: 3px;
+    outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover, .dropdown:focus {
+  border: 2px solid $navy;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: $white;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: $navy;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
 #aboutsm, #worksm, #blogsm {
   font-size: 20px;
   margin-left: 0px;
@@ -135,7 +186,6 @@ font-size: 27px;
 /*index*/
 #main-logo {
   width: 100%;
-  margin-bottom: 20px;
 }
 /*about page*/
 #meet{
@@ -281,6 +331,7 @@ font-size: 27px;
 
   img {
     width: 200px;
+    padding-left: 22px;
   }
 
   @media (max-width: 568px){
@@ -353,6 +404,11 @@ font-size: 27px;
     text-transform: uppercase;
     padding-right: 50px;
     margin-top: 20px;
+  }
+  @media (max-width: 767px){
+    #back {
+      text-align: left;
+    }
   }
   port-content {
     padding-left: 50px;
